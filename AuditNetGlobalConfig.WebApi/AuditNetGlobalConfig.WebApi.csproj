@@ -62,6 +62,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -139,6 +142,7 @@
     <Compile Include="App_Start\AuditNetConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\MultiEntityFrameworkDataProvider.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -270,6 +274,10 @@
     <ProjectReference Include="..\AuditNetGlobalConfig.Models\AuditNetGlobalConfig.Models.csproj">
       <Project>{29F345F3-96E5-4CFF-906E-40092ED53F2B}</Project>
       <Name>AuditNetGlobalConfig.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuditNetGlobalConfig.Security.Models\AuditNetGlobalConfig.Security.Models.csproj">
+      <Project>{436E7CA2-BF8F-4C3E-AB4B-68F4BC399BE8}</Project>
+      <Name>AuditNetGlobalConfig.Security.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
