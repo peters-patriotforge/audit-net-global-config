@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessAddDto.cs" />
+    <Compile Include="AccessLogic.cs" />
     <Compile Include="ShopOrderNoteAddDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShopOrderNoteLogic.cs" />
@@ -53,6 +55,10 @@
     <ProjectReference Include="..\AuditNetGlobalConfig.Models\AuditNetGlobalConfig.Models.csproj">
       <Project>{29F345F3-96E5-4CFF-906E-40092ED53F2B}</Project>
       <Name>AuditNetGlobalConfig.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuditNetGlobalConfig.Security.Models\AuditNetGlobalConfig.Security.Models.csproj">
+      <Project>{436E7CA2-BF8F-4C3E-AB4B-68F4BC399BE8}</Project>
+      <Name>AuditNetGlobalConfig.Security.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
